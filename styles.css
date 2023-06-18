@@ -166,3 +166,11 @@ ul {
     color: inherit;
     text-decoration: none;
 }
+
+.section-about-me__details {
+    flex-basis: 60%;
+    padding: 1rem 3rem;
+    background-color: var(--red);
+    position: relative;
+    z-index: 10;
+}
