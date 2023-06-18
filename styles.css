@@ -174,3 +174,24 @@ ul {
     position: relative;
     z-index: 10;
 }
+
+.section-about-me__heading {
+    width: fit-content;
+    padding: 0 .5em;
+    position: relative;
+    z-index: 10;
+}
+
+.section-about-me__heading::before {
+    content: '';
+    background-color: var(--yellow);
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 170%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
