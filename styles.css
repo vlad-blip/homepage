@@ -195,3 +195,11 @@ ul {
     top: 0;
     z-index: -1;
 }
+
+.section-about-me__block .paragpaph {
+    color: white;
+}
+
+.section-about-me__block:not(:last-child) {
+    margin-bottom: 2rem;
+}
