@@ -232,3 +232,55 @@ ul {
 .tile.active {
     background-color: var(--yellow);
 }
+
+.section_additional {
+    margin-top: 2.5rem;
+    display: flex;
+    background-color: var(--light-brown);
+
+    animation: containerTransition calc(var(--animation-time) + 1s) ease;
+
+    box-shadow: 1rem 1.5rem var(--blue);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.section_additional::after {
+    content: '';
+    display: block;
+    background-image: url('./assets/Eclipse.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .section_additional::after {
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section_additional::after {
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section_additional::after {
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section_additional::after {
+        height: 90%;
+        width: 30%;
+    }
+}
