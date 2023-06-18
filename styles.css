@@ -1,0 +1,330 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    --light-brown: rgb(217, 203, 178);
+    --green: rgb(0, 73, 55);
+    --yellow: rgb(245, 191, 20);
+    --red: rgb(198, 75, 66);
+    --blue: rgb(43, 85, 125);
+
+    --animation-time: 1.2s;
+}
+
+body {
+    background-color: black;
+    padding: 4rem 0;
+    font-family: 'Neucha', cursive;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+.paragpaph {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.heading-secondary {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+@keyframes containerTransition {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    90% {
+        transform: translateX(10%);
+    }
+}
+
+.header {
+    padding: 2rem 1rem;
+    background-color: var(--light-brown);
+    background-image: url('./assets/Subdivided_square_03_00.svg');
+    background-size: 20px;
+    border-top: 1.5rem solid var(--light-brown);
+    box-shadow: 1rem 1.5rem var(--blue);
+    position: relative;
+    margin-bottom: 3rem;
+
+    animation: containerTransition var(--animation-time) ease;
+}
+
+.header__heading {
+    font-family: 'Bagel Fat One', cursive;
+    font-size: clamp(2.5rem, 6vw, 10rem);
+    color: var(--green);
+    text-shadow: .11em .11em white;
+    position: relative;
+    z-index: 10;
+}
+
+.header__position {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    background-color: var(--yellow);
+    max-width: fit-content;
+    padding: .5em 2em;
+    border-radius: 3em;
+    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+.header__description {
+    font-size: clamp(1rem, 2vw, 2rem);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 50%;
+    background-color: var(--yellow);
+    border: 1px solid black;
+    border-top-left-radius: 5em;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.section-about-me {
+    display: flex;
+    background-color: var(--red);
+    position: relative;
+    animation: containerTransition calc(var(--animation-time) + .5s) ease;
+}
+
+.section-about-me::after {
+    content: '';
+    display: block;
+    width: 55%;
+    height: 100%;
+    top: 1rem;
+    right: -1rem;
+    position: absolute;
+    background-color: var(--blue);
+}
+
+.section-about-me__contacts {
+    flex-basis: 40%;
+    padding: 3rem 1rem;
+    border-top-right-radius: 10rem;
+    box-shadow: 20px 0px black;
+    background-color: var(--green);
+    z-index: 20;
+    position: relative;
+}
+
+.section-about-me__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+}
+
+.avatar {
+    height: 65%;
+    width: 90%;
+    object-fit: cover;
+    border: 1px solid black;
+    border-top-right-radius: 8rem;
+}
+
+.socials-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials-list__link {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-about-me__details {
+    flex-basis: 60%;
+    padding: 1rem 3rem;
+    background-color: var(--red);
+    position: relative;
+    z-index: 10;
+}
+
+.section-about-me__heading {
+    width: fit-content;
+    padding: 0 .5em;
+    position: relative;
+    z-index: 10;
+}
+
+.section-about-me__heading::before {
+    content: '';
+    background-color: var(--yellow);
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 170%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.section-about-me__block .paragpaph {
+    color: white;
+}
+
+.section-about-me__block:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.section-about-me__list-item {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.section-about-me__item-name {
+    color: white;
+    border-bottom: 1px solid black;
+    padding: .6em 0;
+    flex-basis: 70%;
+}
+
+.tiles_list {
+    display: flex;
+    gap: .5rem;
+}
+
+.tile {
+    display: block;
+    border: 1px solid black;
+    width: clamp(.5rem, 1vw, 1.5rem);
+    height: clamp(.5rem, 1vw, 1.5rem);
+}
+
+.tile.active {
+    background-color: var(--yellow);
+}
+
+.section_additional {
+    margin-top: 2.5rem;
+    display: flex;
+    background-color: var(--light-brown);
+
+    animation: containerTransition calc(var(--animation-time) + 1s) ease;
+
+    box-shadow: 1rem 1.5rem var(--blue);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.section_additional::after {
+    content: '';
+    display: block;
+    background-image: url('./assets/Eclipse.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .section_additional::after {
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section_additional::after {
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section_additional::after {
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section_additional::after {
+        height: 90%;
+        width: 30%;
+    }
+}
+
+.section_additional__content {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.section_additional__border {
+    width: 1.5rem;
+    border-right: 1px solid black;
+}
+
+.section_additional__border div:nth-child(1) {
+    background-color: var(--blue);
+    height: 50%;
+}
+
+.section_additional__border div:nth-child(2) {
+    background-color: var(--yellow);
+    height: 30%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.section_additional__border div:nth-child(3) {
+    background-color: var(--red);
+    height: 20%;
+}
+
+.section_additional__heading {
+    margin-bottom: 1rem;
+}
+
+:where(.education_item, .experience_item):not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+:where(.education_item, .experience_item)>p:not(:last-child) {
+    margin-bottom: .5rem;
+    padding-bottom: .2em;
+    border-bottom: 1px solid black;
+}
