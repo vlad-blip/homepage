@@ -34,3 +34,14 @@ ul {
     padding-left: 0;
     list-style-type: none;
 }
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        max-width: 70%;
+    }
+}
