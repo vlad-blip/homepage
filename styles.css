@@ -53,3 +53,13 @@ ul {
 .heading-secondary {
     font-size: clamp(1.5rem, 3vw, 3rem);
 }
+
+@keyframes containerTransition {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    90% {
+        transform: translateX(10%);
+    }
+}
