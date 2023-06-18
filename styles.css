@@ -63,3 +63,48 @@ ul {
         transform: translateX(10%);
     }
 }
+
+.header {
+    padding: 2rem 1rem;
+    background-color: var(--light-brown);
+    background-image: url('./assets/Subdivided_square_03_00.svg');
+    background-size: 20px;
+    border-top: 1.5rem solid var(--light-brown);
+    box-shadow: 1rem 1.5rem var(--blue);
+    position: relative;
+    margin-bottom: 3rem;
+
+    animation: containerTransition var(--animation-time) ease;
+}
+
+.header__heading {
+    font-family: 'Bagel Fat One', cursive;
+    font-size: clamp(2.5rem, 6vw, 10rem);
+    color: var(--green);
+    text-shadow: .11em .11em white;
+    position: relative;
+    z-index: 10;
+}
+
+.header__position {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    background-color: var(--yellow);
+    max-width: fit-content;
+    padding: .5em 2em;
+    border-radius: 3em;
+    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+.header__description {
+    font-size: clamp(1rem, 2vw, 2rem);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 50%;
+    background-color: var(--yellow);
+    border: 1px solid black;
+    border-top-left-radius: 5em;
+    padding: 1em;
+    padding-left: 2em;
+}
