@@ -314,3 +314,7 @@ ul {
     background-color: var(--red);
     height: 20%;
 }
+
+.section_additional__heading {
+    margin-bottom: 1rem;
+}
