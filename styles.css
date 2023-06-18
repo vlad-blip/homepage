@@ -203,3 +203,16 @@ ul {
 .section-about-me__block:not(:last-child) {
     margin-bottom: 2rem;
 }
+
+.section-about-me__list-item {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.section-about-me__item-name {
+    color: white;
+    border-bottom: 1px solid black;
+    padding: .6em 0;
+    flex-basis: 70%;
+}
