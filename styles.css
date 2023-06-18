@@ -45,3 +45,11 @@ ul {
         max-width: 70%;
     }
 }
+
+.paragpaph {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.heading-secondary {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
