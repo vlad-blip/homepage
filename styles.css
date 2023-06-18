@@ -284,3 +284,11 @@ ul {
         width: 30%;
     }
 }
+
+.section_additional__content {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+}
