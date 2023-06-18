@@ -143,3 +143,11 @@ ul {
     gap: 1rem;
     color: white;
 }
+
+.avatar {
+    height: 65%;
+    width: 90%;
+    object-fit: cover;
+    border: 1px solid black;
+    border-top-right-radius: 8rem;
+}
