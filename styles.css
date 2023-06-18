@@ -318,3 +318,13 @@ ul {
 .section_additional__heading {
     margin-bottom: 1rem;
 }
+
+:where(.education_item, .experience_item):not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+:where(.education_item, .experience_item)>p:not(:last-child) {
+    margin-bottom: .5rem;
+    padding-bottom: .2em;
+    border-bottom: 1px solid black;
+}
