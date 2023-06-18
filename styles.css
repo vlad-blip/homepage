@@ -292,3 +292,25 @@ ul {
     position: relative;
     z-index: 10;
 }
+
+.section_additional__border {
+    width: 1.5rem;
+    border-right: 1px solid black;
+}
+
+.section_additional__border div:nth-child(1) {
+    background-color: var(--blue);
+    height: 50%;
+}
+
+.section_additional__border div:nth-child(2) {
+    background-color: var(--yellow);
+    height: 30%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.section_additional__border div:nth-child(3) {
+    background-color: var(--red);
+    height: 20%;
+}
