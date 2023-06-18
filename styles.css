@@ -108,3 +108,21 @@ ul {
     padding: 1em;
     padding-left: 2em;
 }
+
+.section-about-me {
+    display: flex;
+    background-color: var(--red);
+    position: relative;
+    animation: containerTransition calc(var(--animation-time) + .5s) ease;
+}
+
+.section-about-me::after {
+    content: '';
+    display: block;
+    width: 55%;
+    height: 100%;
+    top: 1rem;
+    right: -1rem;
+    position: absolute;
+    background-color: var(--blue);
+}
