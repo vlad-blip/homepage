@@ -126,3 +126,13 @@ ul {
     position: absolute;
     background-color: var(--blue);
 }
+
+.section-about-me__contacts {
+    flex-basis: 40%;
+    padding: 3rem 1rem;
+    border-top-right-radius: 10rem;
+    box-shadow: 20px 0px black;
+    background-color: var(--green);
+    z-index: 20;
+    position: relative;
+}
