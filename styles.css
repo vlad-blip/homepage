@@ -216,3 +216,19 @@ ul {
     padding: .6em 0;
     flex-basis: 70%;
 }
+
+.tiles_list {
+    display: flex;
+    gap: .5rem;
+}
+
+.tile {
+    display: block;
+    border: 1px solid black;
+    width: clamp(.5rem, 1vw, 1.5rem);
+    height: clamp(.5rem, 1vw, 1.5rem);
+}
+
+.tile.active {
+    background-color: var(--yellow);
+}
