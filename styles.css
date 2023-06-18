@@ -136,3 +136,10 @@ ul {
     z-index: 20;
     position: relative;
 }
+
+.section-about-me__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+}
